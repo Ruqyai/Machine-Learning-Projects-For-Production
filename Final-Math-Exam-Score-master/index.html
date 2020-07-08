@@ -1,0 +1,61 @@
+
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.1/dist/tf.min.js"></script>
+</head>
+<script>
+
+async function init()
+{
+    document.getElementById('status').innerHTML = 'Loading model ...'
+    model = await tf.loadLayersModel('model/model.json')
+    console.log('Start loading model') 
+    document.getElementById('status').innerHTML = 'Model loaded'
+    console.log('Finish loading model') 
+}
+
+function prediction()
+{
+    input1  = parseFloat(document.getElementById("input1").value)
+    console.log(input1)
+    input2  = parseFloat(document.getElementById("input2").value)
+    console.log(input2)
+    input3  = parseFloat(document.getElementById("input3").value)
+    console.log(input3)
+    input =  tf.tensor3d([input1,input2,input3], [1, 1, 3])
+    console.log(input)
+    pred =  model.predict(input)
+    predi = parseInt(pred.dataSync()[0])
+    document.getElementById('result').innerHTML = "The final math grade will be : "+ predi
+}
+
+var model; 
+window.onload = function ()
+{
+  init(); 
+  document.getElementById("submit").addEventListener("click", prediction);
+}    
+</script>
+
+<body>
+
+<h1>Predict a Final Math Exam Score</h1>
+<br>
+Number of school absences:
+<br>
+<input id="input1" type="number">
+<br>
+First period grade:
+<br>
+<input  id="input2" type="number" >
+<br>
+Second period grade:
+<br>
+<input id="input3" type="number">
+<br><br>
+<input id="submit" type="submit" value="Predict"> 
+<p id = "status"></p>
+<p id = "result"></p>
+
+</body>
+</html>
