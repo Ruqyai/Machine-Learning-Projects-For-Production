@@ -7,4 +7,4 @@
 Demo Link  [here](http://ru0sa.com/Final-Math-Exam-Score).
 
 ### 2) Teach the Machine Colors
-Demo Link [here](http://ru0sa.com/Machine/).
+Demo Link [here](https://ruqyai.github.io/Machine-Learning-Projects-For-Production/Teach-the-Machine-Colors/).
