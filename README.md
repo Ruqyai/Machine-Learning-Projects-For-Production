@@ -2,9 +2,14 @@
 
 ## My ML Projects: 
 
-### 1) Final Math Exam Score
+### 1) Covid-19
+Demo Link [here](https://ruqyai.github.io/Machine-Learning-Projects-For-Production/Covid-19/).
+
+
+### 2) Final Math Exam Score
 
 Demo Link  [here](http://ru0sa.com/Final-Math-Exam-Score).
 
-### 2) Teach the Machine Colors
+### 3) Teach the Machine Colors
 Demo Link [here](https://ruqyai.github.io/Machine-Learning-Projects-For-Production/Teach-the-Machine-Colors/).
+
