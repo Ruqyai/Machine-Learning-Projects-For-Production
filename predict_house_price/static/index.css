@@ -1,0 +1,14 @@
+form {
+    margin: 2%;
+    padding: 2%;
+    user-select: auto;
+    direction: rtl;
+    background-color: #f1d6d6;
+
+}
+
+h1 {
+    margin-right: 2%;
+    user-select: auto;
+    direction: rtl;
+}
