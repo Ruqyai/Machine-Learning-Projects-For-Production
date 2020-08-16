@@ -13,3 +13,8 @@ Demo Link  [here](http://ru0sa.com/Final-Math-Exam-Score).
 ### 3) Teach the Machine Colors
 Demo Link [here](https://ruqyai.github.io/Machine-Learning-Projects-For-Production/Teach-the-Machine-Colors/).
 
+### 4) Predict_House_Price
+Demo Link [here](https://model-deployment-flask.herokuapp.com/).
+
+
+
